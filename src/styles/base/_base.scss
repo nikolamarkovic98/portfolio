@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+    width: 100vw;
+    margin: 0;
+    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(rgba($color-primary, 0.94), #000000);
+    color: $color-secondary;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.app {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    animation: fade-in 2s;
+}
+
+.container {
+    height: 100%;
+    max-width: 1024px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    overflow: hidden;
+    border: 1px solid rgba($color-secondary, 0.2);
+    border-radius: 2rem;
+}
+
+p {
+    padding-left: 1rem;
+    border-left: 1px solid rgba($color-secondary, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: $color-secondary;
+}
+
+.p {
+    padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    #root {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .app {
+        display: flex;
+        min-height: unset;
+        width: 100%;
+        height: 76vh;
+        overflow: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 86%;
+    }
+
+    main {
+        width: unset;
+        max-width: 70%;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
