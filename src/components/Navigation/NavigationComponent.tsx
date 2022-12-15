@@ -1,3 +1,5 @@
+import { ReactEventHandler } from "react";
+
 interface INavigationProps {
     setProject: React.Dispatch<React.SetStateAction<number>>;
 }
@@ -20,7 +22,7 @@ export const NavigationComponent: React.FC<INavigationProps> = ({
                 <a href="https://github.com/nikolamarkovic98" target="_blank">
                     Github
                 </a>
-                <a href="#" target="_blank">
+                <a href="/download" target="_blank">
                     Resume
                 </a>
             </nav>
