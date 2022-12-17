@@ -1,6 +1,7 @@
 .project-list {
     .project-name {
         margin-left: 1rem;
+        white-space: nowrap;
         color: rgba($color-secondary, 0.4);
         cursor: pointer;
         @include prevent-select;
