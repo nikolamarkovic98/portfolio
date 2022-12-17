@@ -21,10 +21,12 @@
         padding: 0.5rem 1rem;
         border: 1px solid rgba($color-secondary, 0.2);
         border-radius: 2rem;
+        text-align: center;
+        @include prevent-select;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $bp-sm) {
     .project {
         .links {
             display: flex;
@@ -34,26 +36,20 @@
         .link {
             margin-bottom: 0;
             margin-right: 1rem;
+            text-align: unset;
         }
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $bp-md) {
     .project {
-        .link:hover {
-            background-color: $color-secondary;
-            color: $color-primary;
-        }
-    }
-}
+        .link {
+            transition: all 0.2s;
 
-@keyframes active-animation {
-    0% {
-        opacity: 0;
-        bottom: -1rem;
-    }
-    100% {
-        opacity: 1;
-        bottom: 0;
+            &:hover {
+                background-color: $color-secondary;
+                color: $color-primary;
+            }
+        }
     }
 }

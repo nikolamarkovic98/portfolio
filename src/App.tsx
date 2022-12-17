@@ -12,18 +12,21 @@ function App() {
         <div className="app">
             <NavigationComponent setProject={setProject} />
             <div className="container">
-                <main>
-                    <ProjectsComponent
-                        projects={projectsData}
-                        activeProject={project}
-                    />
-                </main>
+                <ProjectsComponent
+                    projects={projectsData}
+                    activeProject={project}
+                />
                 <ProjectNamesComponent
                     projects={projectsData}
                     currentProject={project}
                     setProject={setProject}
                 />
             </div>
+            <footer>
+                <a href="mailto:nikola9988markovic@gmail.com">
+                    nikola9988markovic@gmail.com
+                </a>
+            </footer>
         </div>
     );
 }

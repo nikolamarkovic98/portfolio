@@ -1,5 +1,3 @@
-import { ReactEventHandler } from "react";
-
 interface INavigationProps {
     setProject: React.Dispatch<React.SetStateAction<number>>;
 }

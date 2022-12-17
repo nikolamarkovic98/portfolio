@@ -1,0 +1,32 @@
+.project-list {
+    .project-name {
+        margin-left: 1rem;
+        color: rgba($color-secondary, 0.4);
+        cursor: pointer;
+        @include prevent-select;
+
+        &.active {
+            color: $color-secondary;
+            border-left: 1px solid $color-secondary;
+        }
+    }
+}
+
+@media (min-width: $bp-sm) {
+    .project-list {
+        position: relative;
+        bottom: 4rem;
+    }
+}
+
+@media (min-width: $bp-md) {
+    .project-list {
+        margin-top: 0;
+
+        .project-name {
+            &:hover:not(.active) {
+                color: rgba($color-secondary, 0.6);
+            }
+        }
+    }
+}

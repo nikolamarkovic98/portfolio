@@ -7,11 +7,11 @@ export const AboutMe: React.FC<IAboutMeProps> = ({ activeIndex }) => {
 
     return (
         <div className={className}>
-            <h1>Greeting.</h1>
+            <h1>Greetings.</h1>
             <p>
-                I am Nikola Markovic, self taught software developer with over
-                two years of professional experience, developing frontend UIs in
-                VanillaJS/React/Angular and designing APIs using Node/Golang.
+                I am Nikola Markovic, software developer with over two years of
+                professional experience, developing frontend UIs in
+                VanillaJS/React/Angular and designing APIs using Node/Go.
                 <br />
                 <br />
                 My job is making sure your applications run smoothly across all

@@ -12,7 +12,7 @@ export const ProjectsComponent: React.FC<IProjectsProps> = ({
     activeProject,
 }) => {
     return (
-        <>
+        <main className="projects">
             <AboutMe activeIndex={activeProject} />
             {projects.map((project, index) => (
                 <ProjectComponent
@@ -22,6 +22,6 @@ export const ProjectsComponent: React.FC<IProjectsProps> = ({
                     project={project}
                 />
             ))}
-        </>
+        </main>
     );
 };

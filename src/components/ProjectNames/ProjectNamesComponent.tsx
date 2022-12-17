@@ -12,7 +12,7 @@ export const ProjectNamesComponent: React.FC<IProjctsListProps> = ({
     setProject,
 }) => {
     return (
-        <div className="project-list">
+        <div className="project-list p">
             <h2>Projects:</h2>
             {projects.map((project, index) => {
                 const className = `project-name ${

@@ -1,0 +1,9 @@
+.about-me {
+    min-width: 100%;
+    order: 10;
+
+    &.active {
+        order: 1;
+        animation: active-animation 0.5s;
+    }
+}

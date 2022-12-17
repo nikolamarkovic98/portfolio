@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    justify-content: stretch;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    background-color: #1e1c25;
+    border: 1px solid rgba($color-secondary, 0.2);
+    border-radius: 2rem;
+
+    box-shadow: 0 2px 8px 4px rgba($color-secondary, 0.2);
+}
+
+@media (min-width: $bp-sm) {
+    main {
+        max-width: 70%;
+    }
+}
