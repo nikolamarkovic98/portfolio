@@ -22,6 +22,8 @@
         border: 1px solid rgba($color-secondary, 0.2);
         border-radius: 2rem;
         text-align: center;
+        white-space: nowrap;
+
         @include prevent-select;
     }
 }
@@ -37,6 +39,10 @@
             margin-bottom: 0;
             margin-right: 1rem;
             text-align: unset;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 }
@@ -44,11 +50,11 @@
 @media (min-width: $bp-md) {
     .project {
         .link {
+            margin-right: 1.5rem;
             transition: all 0.2s;
 
             &:hover {
-                background-color: $color-secondary;
-                color: $color-primary;
+                background-color: rgba($color-secondary, 0.1);
             }
         }
     }
