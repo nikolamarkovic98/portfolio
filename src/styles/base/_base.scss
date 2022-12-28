@@ -119,6 +119,14 @@ footer {
     }
 }
 
+@media (min-width: $bp-md) {
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 @media (min-width: $bp-xl) {
     body {
         font-size: 22px;

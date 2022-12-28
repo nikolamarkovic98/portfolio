@@ -7,7 +7,7 @@ main {
     border: 1px solid rgba($color-secondary, 0.2);
     border-radius: 2rem;
 
-    box-shadow: 0 2px 8px 4px rgba($color-secondary, 0.2);
+    box-shadow: 0 2px 16px 4px rgba($color-secondary, 0.1);
 }
 
 @media (min-width: $bp-sm) {
