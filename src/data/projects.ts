@@ -31,8 +31,12 @@ export default [
         ],
         links: [
             {
-                to: "https://github.com/nikolamarkovic98/testme",
-                text: "Code",
+                to: "https://github.com/nikolamarkovic98/testme-front",
+                text: "Frontend Code",
+            },
+            {
+                to: "https://github.com/nikolamarkovic98/testme-api",
+                text: "Backend Code",
             },
         ],
     },
